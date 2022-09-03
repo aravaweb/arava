@@ -3,6 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +27,13 @@
 
 	<title>HAPPY TEACHERS DAY|ARAVA</title>
 </head>
-<body>
+<body onload="show();">
+    <div id = "myDiv">
+    	<div>
+        <img id = "myImage" src = "images/ld.gif" class="intro">
+        </div>
+    </div>
+    <div id="content" style="display: none;"> 
 	<section id="spotlight">
 		<section class="spot">
 			<div>
@@ -61,16 +84,80 @@
 	<section id="spot5">
 		<section>
 			<img src="images/illust.png" class="illust">
-			
-			<video>
+			</section>
+			<section>
+				<video class="video1" controls >
 		      <source
 		        src="images/party.mp4"
 		        type="video/mp4"
 		      />
 		    	</video>
+		    	<h1 class="jj">An Unhappened Party...</h1>
+		    	<p class="jjk">Now this website is a surprise for you</p>
+			</section>
+	</section>
 
+
+	<section  id="spot6">
+		
+				<center>
+					<h1 class="hhh">Mr .  ghost</h1>
+				<video  class="video2" controls>
+					<source src="images/ghost.mp4" type="video/mp4">
+				</video>
+					</center>
+		
+	
+	</section>
+
+
+	<section id="spot7">
+
+		<section>
+			<video class="video3" controls>
+				<source src="images/stry.mp4" type="video/mp4">
+
+			</video>
+			<h1 class="jjj">Story Writing</h1>
+		</section>
+		<section>
+			<img src="images/art.png" class="art">
 		</section>
 	</section>
+
+	<center>
+		<img src="images/ty.png" class="ty">
+	</center>
+
+	<img src="images/happy.png" class="happy">
+
+	<footer id="footer">
+		<div>
+			<img src="images/arava.png" class="logo-footer">
+			<h1 class="created" >Copyright © by Aravind Shiju</h1>
+			<h1 class="created" >All rights reserved</h1>
+			
+		</div>
+		<div>
+			<h1 class="classk">Class 10K</h1>
+			<center><p class="year">2022</p>
+				<br><br><br>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLScLPyh8PC6wo5JlSsyG00um5C86mZ-41A4rJyAEDms1aoUxSA/viewform?usp=sf_link" target="_blank"><h1 class="year">Feedback</h1></a>
+			</center>
+
+		</div>
+		<div>
+			<h1 class="morearava">More</h1>
+			<a href="https://aravaweb.github.io/aravamindread" target="_blank"><p class="webiste">Arava Mindread</p></a>
+			<a href="https://aravaweb.github.io/10k/about.html"><p class="webiste">About-10K</p></a>
+			<a href="https://aravaweb.github.io/nowyouseeme" target="_blank"><p class="webiste">Now U see me</p></a>
+			<a href="video.html" target="_blank"><p class="webiste">Click Here</p></a>
+		</div>
+		
+	</footer>
+
+
+	
 </body>
 <script type="text/javascript">
 	$("video").each(function() {
@@ -95,5 +182,65 @@
   observer.observe(this);
 });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	(function($) {
+
+  $(document).ready(function() { 
+  
+  	var $win = $(window);
+    
+  	var elementTop, elementBottom, viewportTop, viewportBottom;
+
+    function isScrolledIntoView(elem) {
+      elementTop = $(elem).offset().top;
+      elementBottom = elementTop + $(elem).outerHeight();
+      viewportTop = $win.scrollTop();
+      viewportBottom = viewportTop + $win.height();
+      return (elementBottom > viewportTop && elementTop < viewportBottom);
+    }
+		
+    if($('video').length){
+
+      var loadVideo;
+
+      $('video').each(function(){
+        $(this).attr('webkit-playsinline', '');
+        $(this).attr('playsinline', '');
+        $(this).attr('muted', 'muted');
+
+        $(this).attr('id','loadvideo');
+        loadVideo = document.getElementById('loadvideo');
+        loadVideo.load();
+      });
+
+      $win.scroll(function () { // video to play when is on viewport 
+      
+        $('video').each(function(){
+          if (isScrolledIntoView(this) == true) {
+              $(this)[0].play();
+          } else {
+              $(this)[0].pause();
+          }
+        });
+      
+      });  // video to play when is on viewport
+
+    } // end .field--name-field-video
+    
+    
+   });
+  
+})(jQuery);
+</script>
+<script type = "text/javascript">
+    function show() {
+        document.getElementById("myDiv").style.display="block";
+        setTimeout("hide()", 2000); // 1 wait, change the delay here
+    }
+
+    function hide() {
+        document.getElementById("myDiv").style.display="none";
+        document.getElementById("content").style.display="block";
+    }
+</script>
 </html>
