@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+}
+#spotlight {
+	background-image: url(../images/spotlight.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 940px;
+}
+.spot {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 80px;
+
+}
+.text {
+	width: 400px;
+	margin-top: 140px;
+
+
+}
+.mam {
+	width: 400px;
+	border-radius: 300px;
+	margin-top: 80px;
+}
+.for {
+	font-family: 'Taprom', cursive;
+	font-size: 25px;
+	margin-left: 120px;
+}
+.text2 {
+	margin-left: 50%;
+	font-family: 'Taprom', cursive;
+	font-size: 30px;
+	margin-top: -10px;
+	color: #676e22;
+}
+#spotlight2 {
+	background-color: #CEC2B5;
+	height: 694px;
+}
+.rose1 {
+	width: 200px;
+	margin-top: -70px;
+}
+.rose2 {
+	width: 200px;
+	margin-top: 70px;
+	margin-left: 84%;
+}
+.text3 {
+	width: 800px;
+	margin-top: 30px;
+
+}
+.illus {
+	margin-top: 90px;
+}
+#spot3 {
+	display: flex;
+	justify-content: space-between;
+}
+.event {
+	margin-top: 160px;
+	font-family: 'Taprom', cursive;
+	color: #92616A;
+	margin-right: 7%;
+	font-size: 70px;
+}
+#spot4 {
+	display: flex;
+	justify-content: space-between;
+}
+.textpara {
+	font-family: 'Taprom', cursive;
+	font-size: 30px;
+	color: #92616A;
+	margin-top: 70px;
+	margin-left: 50px;
+
+}
+.sree {
+	width: 27%;
+	height: 10%;
+	margin-right: 30px;
+}
+.text4 {
+	margin-top: 100px;
+	width: 800px;
+}
+#spot5 {
+	background-color: #E9B8DB;
+	width: 100%;
+	height: 300px;
+	margin-top: 30px;
+}
+.illust {
+	width: 300px;
+}
